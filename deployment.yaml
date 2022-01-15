@@ -9,6 +9,7 @@ spec:
   - port: 8888
     protocol: TCP
     targetPort: 8888
+  type: LoadBalancer
   
 ---
 
@@ -28,7 +29,7 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v1
+        image: wil42/playground:v2
         ports:
         - containerPort: 8888
 
